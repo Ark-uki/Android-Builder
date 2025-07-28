@@ -1,11 +1,11 @@
 [
     {
         "kernelSource": { 
-            "name": "k40-RealKing", 
-            "repo": "https://github.com/Rohail33/Realking_kernel_sm8250", 
-            "branch": "base", 
-            "device": "alioth", 
-            "defconfig": "alioth_defconfig" 
+            "name": "Sunstone", 
+            "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_stone", 
+            "branch": "15.0", 
+            "device": "Sunstone", 
+            "defconfig": "moonstone_defconfig" 
           }, 
           "toolchains": [ 
             {  
@@ -36,13 +36,10 @@
           "AnyKernel3": { 
             "use": true, 
             "release": true,
-            "custom": {
-              "repo": "https://github.com/luyanci/AnyKernel3",
-              "branch": "k40"
             }
           },
-          "enableKernelSU": true, 
-          "enableKernelSUExtPatch": true,
+          "enableKernelSU": false, 
+          "enableKernelSUExtPatch": false,
           "enableLXC": false        
     }
 ]
